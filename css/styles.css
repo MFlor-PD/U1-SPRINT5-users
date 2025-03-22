@@ -10,13 +10,44 @@ h1 {
   color: #333;
 }
 
-ul div{
-  background-color: red;
-  width: 100px;
-  height: 50px;
+#listaUsuarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+#listaUsuarios li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
   display: flex;
-  flex-wrap: wrap;
-  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#listaUsuarios img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
+#listaUsuarios h2 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
 
+#listaUsuarios p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#listaUsuarios p strong {
+  color: #333;
+}
