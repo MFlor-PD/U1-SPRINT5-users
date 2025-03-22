@@ -10,4 +10,13 @@ h1 {
   color: #333;
 }
 
+ul div{
+  background-color: red;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
 
